@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <header class="fixed top-0 w-full z-10">
+        <div class="container mx-auto items-center flex justify-center sm:justify-between pt-[20px] pb-[20px] relative">
+            <a class=""  href=""><img src="./images/logo.png" alt=""></a>
+            <ul class="sm:flex gap-[30px] hidden">
+                <li><a class="text-[white]" href="./pages/menu.html">Menu</a></li>
+                <li><a class="text-[white]" href="./pages/news.html">News</a></li>
+                <li><a class="text-[white]" href="./pages/contact.html">Contact Us</a></li>
+                <li><a class="text-[white]" href="./pages/about.html">About Us</a></li>
+                <li class="border-[1px white]"><a class="text-[white]" href="">Log in</a></li>
+            </ul>   
+            
+            <button id="menutog" class="block sm:hidden absolute top-[15px] right-[15px]"><img src="./images/menu.png" alt=""></button>
+        </div>
+    </header>
+
+
+    <ul id="tellist" class="bg-[#BB2339] block sm:hidden flex flex-col justify-center w-full p-[50px] h-[screen] fixed default">
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./pages/menu.html">Menu</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./pages/news.html">News</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./pages/contact.html">Contact Us</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./pages/about.html">About Us</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="">Log in</a></li>
+                <li><button id="menuhide" class="block mx-auto mt-[40px] border-[1px] border-[#BB2339] w-[170px] h-[50px] text-[#BB2339] bg-[white] rounded-full">Orqaga</button></li>
+            </ul>
+
+
+    <main>
+        <section class="bg-[#BB2339]">
+            <div class="container xl:flex mx-auto pt-[180px] pb-[237px] gap-98px">
+                <div class="max-w-[555px] w-[full] mx-auto ">
+                    <strong class="text-[white] text-[18px] md:text-[20px] xl:text-[23px]">Chase the new Flavour</strong>
+                    <h1 class="text-[white] text-[32px] md:text-[44px] lg:text-[58px] xl:text-[74px] xl:text-[90px] mt-[8px] mb-[20px] ">The key to Fine dining</h1>
+                    <p class=" text-[white] mb-[40px] text-[16px]">Sit tellus lobortis sed senectus vivamus molestie. <br>  Condimentum volutpat morbi facilisis quam scelerisque <br> sapien. Et, penatibus aliquam amet tellus </p>
+                    <button class=" text-[white] max-w-[173px] w-full h-[44px] border-1 border-white rounded-full">Explore Menu</button>
+                </div>
+                <img class="xl:w-full" src="./images/hero.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="py-[120px] bg-[#F8F8F8]">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                <h2 class="text-[#BB2339] text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px]">Popular Dishes</h2>
+                 <ul class="flex gap-[10px]">
+                 <li><button><img src="./images/chevron-left.png" alt=""></button> </li>
+                 <li><button><img src="./images/chevron-right (1).png" alt=""></button></li> 
+                </ul> </div>
+                <div class="mx-auto  w-full flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+                    <div class="flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img src="./images/shashlik.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <img class="" src="./images/stars.png" alt="">
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img src="./images/pizza.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <img class="" src="./images/stars.png" alt="">
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img src="./images/burger.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <img class="" src="./images/stars.png" alt="">
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img src="./images/mix.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <img class="" src="./images/stars.png" alt="">
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="py-[70px]">
+            <div class="container mx-auto">
+                <h2 class="text-[#BB2339] text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px]">Our Regular Menu Pack</h2>
+
+                <div class="mt-[40px] flex gap-[10px] overflow-x-scroll">
+                    <button id="btn-all"      class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[82px]  text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">All</button>
+                    <button id="btn-shavarma" class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[148px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">Shavarma</button>
+                    <button id="btn-turk"     class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[156px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">Turk kebab</button>
+                    <button id="btn-burger"   class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[213px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">Hamburger Kebab</button>
+                    <button id="btn-doner"    class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[169px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">Doner kebab</button>
+                    <button id="btn-sushi"    class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[163px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">Sushi kebab</button>
+                    <button id="btn-pizza"    class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[211px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">French fries Pizza</button>
+                    <button id="btn-desert"   class="py-[10px] px-[30px] whitespace-nowrap h-[48px] w-[133px] text-[#BB2339] bg-[white] rounded-full border-#BB2339 border-1 hover:text-[white] hover:bg-[#BB2339] transition duration-700 ease-in-out">Deserts</button>
+                </div>
+
+
+
+                <div class="mx-auto  w-full flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+                    <div id="desert" class=" border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/shashli2.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div id="turk" class=" border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/mix.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="shavarma" class=" border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/lavash.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="sushi" class=" border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/mix2.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+
+
+                    <div id="pizza" class=" border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/pizza.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div id="doner" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/sandvich.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="doner2" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/doner.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="burger" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/burger.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+
+
+
+                    <div id="shavarma2" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/hotdog.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div id="desert2" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/shashli3.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="turk2" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/mix.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="sushi2" class=" border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="./images/mix2.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                </div>
+                <button id="showbtn" class="block sm:hidden w-[295px] h-[44px] text-[#BB2339] block mx-auto border-[1px] border-[#BB2339] hover:text-[white] hover:bg-[#BB2339] border-[1px] rounded-full transition duration-700 border-[#BB2339] mt-[30px]">Show more</button>
+                <button id="hidebtn" class="block sm:hidden w-[295px] h-[44px] text-[#BB2339] block mx-auto border-[1px] border-[#BB2339] hover:text-[white] hover:bg-[#BB2339] border-[1px] rounded-full transition duration-700 border-[#BB2339] mt-[30px]">Hide</button>
+            </div>
+        </section>
+
+
+
+        <section class="bg-[#F4F4F4] py-[90px]">
+            <div class="container mx-auto ">
+                <strong class="lg:text-[20px] xl:text-[23px] text-center block">Testimony</strong>
+                <img class="w-[40px] h-[9px] mx-auto" src="./images/spoon.png" alt="">
+                <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px] text-center">Happy customers</h2>
+
+                <div class="flex flex-col justify-center sm:grid md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[60px]">
+
+                    <div class="max-w-[410px] w-[full] py-[30px] pr-[50px] pl-[20px] bg-[white] border-[1px] border-[#333333] rounded-[10px]">
+                        <h5>Maria</h5>
+                        <p class="pt-[10px] pb-[20px] text-[#AAAAAA]">Я всегда был  самым худым и щуплым ребенком среди своих сверстников. Я всегда мечтал стать как мой кумир и иметь интерес...</p>
+                        <img src="./images/infodate.png" alt="">
+                    </div>
+
+                    <div class="max-w-[410px] w-[full] py-[30px] pr-[50px] pl-[20px] bg-[white] border-[1px] border-[#333333] rounded-[10px]">
+                        <h5>Maria</h5>
+                        <p class="pt-[10px] pb-[20px] text-[#AAAAAA]">Я всегда был  самым худым и щуплым ребенком среди своих сверстников. Я всегда мечтал стать как мой кумир и иметь интерес...</p>
+                        <img src="./images/infodate.png" alt="">
+                    </div>
+
+                    <div class="max-w-[410px] w-[full] py-[30px] pr-[50px] pl-[20px] bg-[white] border-[1px] border-[#333333] rounded-[10px]">
+                        <h5>Maria</h5>
+                        <p class="pt-[10px] pb-[20px] text-[#AAAAAA]">Я всегда был  самым худым и щуплым ребенком среди своих сверстников. Я всегда мечтал стать как мой кумир и иметь интерес...</p>
+                        <img src="./images/infodate.png" alt="">
+                    </div>
+                    
+                </div>
+
+                <div class="max-w-[100px] w-full mx-auto mt-[40px]"><ul class="flex gap-[10px]">
+                 <li><button><img src="./images/chevron-left.png" alt=""></button> </li>
+                 <li><button><img src="./images/chevron-right (1).png" alt=""></button></li> 
+                </ul> </div>
+            </div>
+        </section>
+
+
+
+        <section class="py-[90px]">
+            <div class="container mx-auto">
+               <strong class="lg:text-[20px] xl:text-[23px] text-center block">News</strong>
+                <img class="w-[40px] h-[9px] mx-auto" src="./images/spoon.png" alt="">
+                <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px] text-[#BB2339] text-center">Gerícht updates</h2>
+
+                <div class="flex flex-col justify-center sm:grid md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[60px]">
+
+                    <div class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px]">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px] mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px]">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px]  mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px]">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px]  mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+
+                    <div id="mangal1" class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px] hidden">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px] mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                    <div id="mangal2" class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px] hidden">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px]  mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                    <div id="mangal3" class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px] hidden">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px]  mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+
+                    <div id="mangal4" class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px] hidden">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px] mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                    <div id="mangal5" class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px] hidden">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px]  mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                    <div id="mangal6" class="max-w-[410px] w-[full]  bg-[white] border-[1px] border-[#333333] rounded-[10px] hidden">
+                        <img class="w-full" src="./images/mangal.png" alt="">
+                        <h5 class="lg:text-[20px] xl:text-[23px]  mt-[20px] ml-[20px]">Tips for prepping and caring for your grill</h5>
+                        <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#BB2339] mt-[20px] mb-[30px] ml-[20px]">Read more</p>  <p class="mr-[20px]">16 Apr 2021</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="mangalcome" class="border-[1px] border-[#BB2339] text-[#BB2339] mt-[50px] max-w-[295px] w-full h-[44px] sm:max-w-[149px] w-full sm:h-[44px] mx-auto block rounded-full hover:text-[white] hover:bg-[#BB2339] transition duration-700">Viev More</button>
+                <button id="mangalhide" class="border-[1px] border-[#BB2339] text-[#BB2339] mt-[50px] max-w-[295px] w-full h-[44px] sm:max-w-[149px] w-full sm:h-[44px] mx-auto block rounded-full hover:text-[white] hover:bg-[#BB2339] transition duration-700">Hide</button>
+
+            </div>
+        </section>
+
+
+
+        <section class="bg-[#F4F4F4] mb-[250px] py-[120px]">
+            <div class="container mx-auto flex flex-col lg:grid grid-cols-2 gap-[64px]">
+                <div class="">
+                    <strong>Instagram</strong>
+                    <img class="block my-[8px]" src="./images/spoon.png" alt="">
+                    <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px]">Photo Gallery</h2>
+                    <p class="my-[24px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+                     <button class="border-[1px] border-[#BB2339] text[#BB2339 mt-[50px] w-[149px] h-[44px] rounded-full hover:text-[white] hover:bg-[#BB2339]">Viev More</button>
+                </div>
+
+                <div class="grid grid-flow-col auto-cols-max gap-[20px] overflow-hidden">
+                    <div><img class="insta2 w-[300px] h-[447px] shadow-md shrink-0 block" src="./images/insta1.png" alt=""></div>
+                    <div><img class="insta2 w-[300px] h-[447px] shadow-md shrink-0 block" src="./images/insta2.png" alt=""></div>
+                    <div><img class="insta2 w-[300px] h-[447px] shadow-md shrink-0 block" src="./images/insta1.png" alt=""></div>
+                    <div><img class="insta2 w-[300px] h-[447px] shadow-md shrink-0 block translate-x-3/4" src="./images/insta3.jpg" alt=""> </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer class="py-[120px] bg-[#BB2339] relative mt-[150px]">
+        <div class="max-w-[1106px] w-full bg-[#BB2339] text-center rounded-[20px] pt-[64px] absolute top-[-221px] xl:left-[190px]  z-1 shadow-xl">
+            <strong class="lg:text-[20px] xl:text-[23px] text-center text-[white] block">Newsletter</strong>
+            <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px] text-[white] text-center">Subscribe to Our Newsletter</h2>
+            <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">And never miss latest Updates!</p>
+            <div class="py-[64px] flex flex-col gap-[15px] md:flex gap-[10px] max-w-[811px] w-full mx-auto">
+            <input class=" max-w-[274px] w-full block mx-auto md:max-w-[635px] w-full h-[52px] rounded-[100px] border-[white] border-[1px] block" type="email" placeholder="Email Address">
+            <button class="max-w-[274px] w-full block mx-auto md:max-w-[144px] w-full h-[52px] rounded-[100px] border-[white] border-[1px]">Subscribe</button> </div>
+        </div>
+
+
+        <div class="mt-[292px] max-w-[1280px] w-full mx-auto flex flex-col justify-center md:grid grid-cols-3">
+            <ul class="text-center mt-[70px] order-2">
+                <li class="text-[white] text-[32px] mb-[24px]">Contact Us</li>
+                <li class="text-[white] mb-[10px]">9 W 53rd St, London, NY 10019, UK</li>
+                <li class="text-[white]">+1 212-344-1230</li>
+                <li class="text-[white]">+1 212-555-1230</li>
+            </ul>
+
+
+            <div class="max-w-[438px] w-full order-1 md:order-2 flex flex-col justify-center mx-auto ">
+                <img src="./images/logofoot.png" alt="">
+                <p class="text-center text-[white] mt-[32px] mb-[45px]">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <img class="block w-[104px] mx-auto" src="./images/Social media.png" alt="">
+                <p class="text-center text-[white] mt-[80px] mb-[20px] ml-[10px]">2022 Pop online. All Rights reserved.</p>
+            </div>
+
+
+
+            <ul class="text-center order-3 mt-[70px]">
+                <li class="text-[white] text-[32px] mb-[24px] ">Working Hours</li>
+                <li class="text-[white]">Monday-Friday:</li>
+                <li class="text-[white] mb-[12px]">08:00 am -12:00 am</li>
+                <li class="text-[white]">Saturday-Sunday:</li>
+                <li class="text-[white]">07:00am -11:00 pm</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

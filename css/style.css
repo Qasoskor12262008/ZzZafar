@@ -1,0 +1,37 @@
+*{
+    font-family: sans-serif;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body{
+    transition: 2s ease;
+}
+
+.shaw{
+    display: block !important; 
+}
+
+.show{
+    display: block !important;
+}
+
+.netu{
+    display: none !important;
+}
+
+
+.default{
+    transform: translateX(-100%);
+    transition: 2s ease;
+}
+
+
+.spawn{
+    transform: translateX(0%);
+    transition: 2s ease;
+}
+

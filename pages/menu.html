@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="../css/style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <header class="fixed top-0 w-full z-10">
+        <div class="container mx-auto items-center flex justify-center sm:justify-between pt-[20px] pb-[20px] relative bg-[#BB2339]">
+            <a class="" href="../index.html"><img src="../images/logo.png" alt=""></a>
+            <ul class="sm:flex gap-[30px] hidden">
+                <li><a class="text-[white]" href="./menu.html">Menu</a></li>
+                <li><a class="text-[white]" href="./news.html">News</a></li>
+                <li><a class="text-[white]" href="./contact.html">Contact Us</a></li>
+                <li><a class="text-[white]" href="./about.html">About Us</a></li>
+                <li class="border-[1px white]"><a class="text-[white]" href="">Log in</a></li>
+            </ul>   
+            
+            <button id="menutog" class="block sm:hidden absolute top-[15px] right-[15px]"><img src="./images/menu.png" alt=""></button>
+        </div>
+    </header>
+
+    <ul id="tellist" class="bg-[#BB2339] block sm:hidden flex flex-col justify-center w-full p-[50px] h-[screen] fixed default">
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./menu.html">Menu</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./news.html">News</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./contact.html">Contact Us</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./about.html">About Us</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="">Log in</a></li>
+                <li><button id="menuhide" class="block mx-auto mt-[40px] border-[1px] border-[#BB2339] w-[170px] h-[50px] text-[#BB2339] bg-[white] rounded-full">Orqaga</button></li>
+            </ul>
+
+    
+
+
+    <main>
+        <section class="py-[120px]">
+            <div class="container mx-auto mt-[50px]">
+                <p class="">Home | Menu</p>
+                <div class="mt-[70px] flex gap-[30px] ">
+                        <div class="bg-[#BB2339] max-w-[428px] w-full h-[844px] rounded-[20px]">
+                            <h2 class="md:text-[28px] lg:text-[34px] xl:text-[40px] text-[white] p-[50px]">Our Regular Menu Pack</h2>
+                        <div class="flex flex-col  pl-[40px]">
+                    <button id="btn-all"      class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[82px]  text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">All</button>
+                    <button id="btn-shavarma" class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[148px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">Kebabs</button>
+                    <button id="btn-turk"     class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[156px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">Pides</button>
+                    <button id="btn-burger"   class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[213px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">Hamburgers</button>
+                    <button id="btn-doner"    class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[169px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">Meal Deals</button>
+                    <button id="btn-sushi"    class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[163px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">Sides</button>
+                    <button id="btn-pizza"    class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[211px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">French fries Pizza</button>
+                    <button id="btn-desert"   class="mb-[20px] py-[10px] px-[30px]  h-[48px] w-[133px] text-[white] bg-[trasparent] rounded-full border-#BB2339 border-1 hover:text-[black] hover:bg-[white] transition duration-700 ease-in-out">Drinks</button> </div> </div>
+                    
+
+                <div class="grid lg:grid grid-cols-2 gap-[36px]">
+                    <div id="desert" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/shashli2.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div id="turk" class=" mb-[20px]  h-[436px]   border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/mix.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="shavarma"class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/lavash.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="sushi" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/mix2.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+
+
+                    <div id="pizza" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/pizza.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div id="doner" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/sandvich.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="doner2" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/doner.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="burger" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/burger.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+
+
+
+                    <div id="shavarma2" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/hotdog.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+
+                    <div id="desert2" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/shashli3.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="turk2" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/mix.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                    
+                    <div id="sushi2" class="mb-[20px]  h-[436px] border-[#242424] border-[1px] rounded-[14px] group hidden sm:flex flex-col items-center text-center max-w-[310px] w-full rounded-[14px] bg-[white] p-[20px] ">
+                        <img class="transition duration-700 group-hover:scale-125" src="../images/mix2.png" alt="">
+                        <p class="text-[18px] pt-[10px] pb-[20px] ">Barbecue Shish kebab Shashlik Skewer</p>
+                        <p class="text-[24px] text-[#BB2339] my-[20px] ">$12.00</p>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="bg-[#F4F4F4] mb-[250px] py-[120px]">
+            <div class="container mx-auto flex flex-col lg:grid grid-cols-2 gap-[64px]">
+                <div class="">
+                    <strong>Instagram</strong>
+                    <img class="block my-[8px]" src="./images/spoon.png" alt="">
+                    <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px]">Photo Gallery</h2>
+                    <p class="my-[24px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+                     <button class="border-[1px] border-[#BB2339] text[#BB2339 mt-[50px] w-[149px] h-[44px] rounded-full hover:text-[white] hover:bg-[#BB2339]">Viev More</button>
+                </div>
+
+                <div class="grid grid-flow-col auto-cols-max gap-[20px] overflow-hidden">
+                    <img class="w-[300px] h-[447px] shadow-md shrink-0 block" src="../images/insta1.png" alt="">
+                    <img class="w-[300px] h-[447px] shadow-md shrink-0 block" src="../images/insta2.png" alt="">
+                    <img class="w-[300px] h-[447px] shadow-md shrink-0 block" src="../images/insta1.png" alt="">
+                    <img class="w-[300px] h-[447px] shadow-md shrink-0 block translate-x-3/4" src="../images/insta3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer class="py-[120px] bg-[#BB2339] relative mt-[150px]">
+        <div class="max-w-[1106px] w-full bg-[#BB2339] text-center rounded-[20px] pt-[64px] absolute top-[-221px] xl:left-[190px]  z-1 shadow-xl">
+            <strong class="lg:text-[20px] xl:text-[23px] text-center text-[white] block">Newsletter</strong>
+            <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px] text-[white] text-center">Subscribe to Our Newsletter</h2>
+            <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">And never miss latest Updates!</p>
+            <div class="py-[64px] flex flex-col gap-[15px] md:flex gap-[10px] max-w-[811px] w-full mx-auto">
+            <input class=" max-w-[274px] w-full block mx-auto md:max-w-[635px] w-full h-[52px] rounded-[100px] border-[white] border-[1px] block" type="email" placeholder="Email Address">
+            <button class="max-w-[274px] w-full block mx-auto md:max-w-[144px] w-full h-[52px] rounded-[100px] border-[white] border-[1px]">Subscribe</button> </div>
+        </div>
+
+
+        <div class="mt-[292px] max-w-[1280px] w-full mx-auto flex flex-col justify-center md:grid grid-cols-3">
+            <ul class="text-center mt-[70px] order-2">
+                <li class="text-[white] text-[32px] mb-[24px]">Contact Us</li>
+                <li class="text-[white] mb-[10px]">9 W 53rd St, London, NY 10019, UK</li>
+                <li class="text-[white]">+1 212-344-1230</li>
+                <li class="text-[white]">+1 212-555-1230</li>
+            </ul>
+
+
+            <div class="max-w-[438px] w-full order-1 md:order-2 flex flex-col justify-center mx-auto ">
+                <img src="./images/logofoot.png" alt="">
+                <p class="text-center text-[white] mt-[32px] mb-[45px]">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <img class="block w-[104px] mx-auto" src="./images/Social media.png" alt="">
+                <p class="text-center text-[white] mt-[80px] mb-[20px] ml-[10px]">2022 Pop online. All Rights reserved.</p>
+            </div>
+
+
+
+            <ul class="text-center order-3 mt-[70px]">
+                <li class="text-[white] text-[32px] mb-[24px] ">Working Hours</li>
+                <li class="text-[white]">Monday-Friday:</li>
+                <li class="text-[white] mb-[12px]">08:00 am -12:00 am</li>
+                <li class="text-[white]">Saturday-Sunday:</li>
+                <li class="text-[white]">07:00am -11:00 pm</li>
+            </ul>
+        </div>
+    </footer>
+
+
+<script src="../js/main.js"></script>
+</body>
+</html>

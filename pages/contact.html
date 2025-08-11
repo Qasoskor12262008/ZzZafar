@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="fixed top-0 w-full z-10">
+        <div class="container mx-auto items-center flex justify-center sm:justify-between pt-[20px] pb-[20px] relative bg-[#BB2339]">
+            <a class="" href="../index.html"><img src="../images/logo.png" alt=""></a>
+            <ul class="sm:flex gap-[30px] hidden">
+                <li><a class="text-[white]" href="./menu.html">Menu</a></li>
+                <li><a class="text-[white]" href="./menu.html">News</a></li>
+                <li><a class="text-[white]" href="./contact.html\">Contact Us</a></li>
+                <li><a class="text-[white]" href="./about.html">About Us</a></li>
+                <li class="border-[1px white]"><a class="text-[white]" href="">Log in</a></li>
+            </ul>   
+            
+            <button id="menutog" class="block sm:hidden absolute top-[15px] right-[15px]"><img src="./images/menu.png" alt=""></button>
+        </div>
+    </header>
+
+    <ul id="tellist" class="bg-[#BB2339] block sm:hidden flex flex-col justify-center w-full p-[50px] h-[screen] fixed default">
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./menu.html">Menu</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./news.html">News</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./contact.html">Contat Us</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="./about.html">About Us</a></li>
+                <li class="block mx-auto mb-[20px] border-[1px] border-[#BB2339] items-center w-[100px] h-[40px] bg-[white] rounded-full"><a class="text-[#BB2339] block items-center text-center pt-[7px]" href="">Log in</a></li>
+                <li><button id="menuhide" class="block mx-auto mt-[40px] border-[1px] border-[#BB2339] w-[170px] h-[50px] text-[#BB2339] bg-[white] rounded-full">Orqaga</button></li>
+         </ul>
+
+
+         <main>
+            <section class="mb-[110px]">
+                <div class="container mx-auto">
+                    <h2 class="sm:[32px] md:[44px] lg:text-[54px] xl:text-[64px] text-center block">Contact Us</h2>
+                    <div class="flex flex-col justify-center xl:grid grid-cols-2 gap-[50px] ">
+                    <div class="">
+                    <div class="mx-auto flex mb-[25px] py-[25px] pl-[20px] gap-[24px] items-center  max-w-[420px] w-full rounded-[14px] border-[0.5px] border-[#242424]">
+                        <img class="w-[60px] h-[60px] border-[1px] border-[gray-600] rounded-[50px] p-[18px] "src="../imagescontact/phone.png" alt="">
+                        <ul>
+                            <li class="text-[22px]">Phone</li>
+                            <li>+1 212-344-1230</li>
+                        </ul>
+                    </div>
+
+                    <div class="mx-auto flex mb-[25px] py-[25px] pl-[20px] gap-[24px] items-center  max-w-[420px] w-full rounded-[14px] border-[0.5px] border-[#242424]">
+                        <img class="w-[60px] h-[60px] border-[1px] border-[gray-600] rounded-[50px] p-[18px]" src="../imagescontact/mail.png" alt="">
+                        <ul>
+                            <li class="text-[22px]">Email Address</li>
+                            <li>eaturkish@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="mx-auto flex mb-[25px] py-[25px] pl-[20px] gap-[24px] items-center  max-w-[420px] w-full rounded-[14px] border-[0.5px] border-[#242424]">
+                        <img class="w-[60px] h-[60px] border-[1px] border-[gray] rounded-[50px] bg-[gray-600] p-[18px]" src="../imagescontact/004-instagram.png" alt="">
+                        <ul>
+                            <li class="text-[22px]">Instragram</li>
+                            <li>eaturkish</li>
+                        </ul>
+                    </div>
+
+                    <div class="mx-auto flex mb-[25px] py-[25px] pl-[20px] gap-[24px] items-center max-w-[420px] rounded-[14px] border-[0.5px] border-[#242424]">
+                        <img class="w-[60px] h-[60px] border-[1px] border-[gray] rounded-[50px] bg-[gray-600] p-[18px]" src="../imagescontact/twitter.png" alt="">
+                        <ul>
+                            <li class="text-[22px]">Twitter</li>
+                            <li>eaturkish</li>
+                        </ul>
+                    </div>
+
+                    <div class="mx-auto flex mb-[25px] py-[25px] pl-[20px] gap-[24px] items-center max-w-[420px] rounded-[14px] border-[0.5px] border-[#242424]">
+                        <img class="w-[60px] h-[60px] border-[1px] border-[gray] rounded-[50px] bg-[gray-600] p-[18px]" src="../imagescontact/facebook.png" alt="">
+                        <ul>
+                            <li class="text-[22px]">Facebook</li>
+                            <li>eaturkish</li>
+                        </ul>
+                    </div>
+                    </div>
+ 
+                    <div class="p-[40px] max-w-[790px] w-full h-[610px] flex flex-col">
+                    <h3 class="mb-[16px] md:text-[24px] lg:text-[31px] xl:text-[38px]">Send Messege</h3>
+                    <p class="text-[#242424] text-[16px]">If you have any questions, you can send us an SMS or contact us by phone you can also contact us via social networks.</p>
+                    <div class="mb-[15px] mt-[40px] flex flex-col justify-center sm:grid grid-cols-2 gap-[20px]">
+                        <input class="border-[0.5px] border-[gray-400] max-w-345px w-full h-[58px] rounded-[12px] block" required type="text" placeholder="Name">
+                        <input class="border-[0.5px] border-[gray-400] max-w-345px w-full h-[58px] rounded-[12px] block" required type="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="mb-[15px] flex flex-col justify-center sm:grid grid-cols-2 gap-[20px]">
+                        <input class="border-[0.5px] border-[gray-400] max-w-345px w-full h-[58px] rounded-[12px] block" required type="number" placeholder="Phine Number">
+                        <input class="border-[0.5px] border-[gray-400] max-w-345px w-full h-[58px] rounded-[12px] block" required type="text" placeholder="Subject">
+                    </div>
+                    <input class="border-[0.5px] border-[gray-400] rounded-[12px] max-w-[710px] w-full h-[150px] text-top block pt-[10px]"  type="text" placeholder="Massage" required> 
+                    <button class="max-w-[214px] w-full h-[61px] rounded-full bg-[#BB2339] text-[white] mt-[25px]">Send mesage</button> </div>
+                </div>
+            </section>
+
+
+
+            <section class="mb-[270px]">
+                <div class="container mx-auto">
+                    <h3 class="mb-[40px] md:text-[24px] lg:text-[31px] xl:text-[38px] text-center">Find us by card</h3>
+                    <img src="../imagescontact/map.png" alt="">
+                </div>
+            </section>
+         </main>
+
+
+
+    <footer class="py-[120px] bg-[#BB2339] relative mt-[150px]">
+        <div class="py-[25px] pl-[20px] gap-[24px] max-w-[1106px] w-full bg-[#BB2339] text-center rounded-[20px] pt-[64px] absolute top-[-221px] xl:left-[190px]  z-1 shadow-xl">
+            <strong class="lg:text-[20px] xl:text-[23px] text-center text-[white] block">Newsletter</strong>
+            <h2 class="text-[24px] md:text-[32px] ld:text-[40px] xl:text-[48px] text-[white] text-center">Subscribe to Our Newsletter</h2>
+            <p class="pt-[10px] pb-[20px] mt-[20px] ml-[20px] text-[#AAAAAA]">And never miss latest Updates!</p>
+            <div class="py-[64px] flex flex-col gap-[15px] md:flex gap-[10px] max-w-[811px] w-full mx-auto">
+            <input class=" max-w-[274px] w-full block mx-auto md:max-w-[635px] w-full h-[52px] rounded-[100px] border-[white] border-[1px] block" type="email" placeholder="Email Address">
+            <button class="max-w-[274px] w-full block mx-auto md:max-w-[144px] w-full h-[52px] rounded-[100px] border-[white] border-[1px]">Subscribe</button> </div>
+        </div>
+
+
+        <div class="mt-[292px] max-w-[1280px] w-full mx-auto flex flex-col justify-center md:grid grid-cols-3">
+            <ul class="text-center mt-[70px] order-2">
+                <li class="text-[white] text-[32px] mb-[24px]">Contact Us</li>
+                <li class="text-[white] mb-[10px]">9 W 53rd St, London, NY 10019, UK</li>
+                <li class="text-[white]">+1 212-344-1230</li>
+                <li class="text-[white]">+1 212-555-1230</li>
+            </ul>
+
+
+            <div class="max-w-[438px] w-full order-1 md:order-2 flex flex-col justify-center mx-auto ">
+                <img src="./images/logofoot.png" alt="">
+                <p class="text-center text-[white] mt-[32px] mb-[45px]">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <img class="block w-[104px] mx-auto" src="./images/Social media.png" alt="">
+                <p class="text-center text-[white] mt-[80px] mb-[20px] ml-[10px]">2022 Pop online. All Rights reserved.</p>
+            </div>
+
+
+
+            <ul class="text-center order-3 mt-[70px]">
+                <li class="text-[white] text-[32px] mb-[24px] ">Working Hours</li>
+                <li class="text-[white]">Monday-Friday:</li>
+                <li class="text-[white] mb-[12px]">08:00 am -12:00 am</li>
+                <li class="text-[white]">Saturday-Sunday:</li>
+                <li class="text-[white]">07:00am -11:00 pm</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
