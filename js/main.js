@@ -383,6 +383,7 @@ const menutog = document.getElementById("menutog")
 const menuhide = document.getElementById("menuhide")
 const tellist = document.getElementById("tellist")
 
+
 menutog.addEventListener("click" , function(){
     tellist.classList.add("spawn")
 })
